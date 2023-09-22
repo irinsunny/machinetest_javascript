@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/travel.css">
+</head>
+<script>
+    window.history.forward();
+</script>
+<body>
+    <div class="header">
+        <h2 class="text1">TRAVEL REQUESTOR</h2> <br><br><br>
+        <a href="/html/travel.html">
+            <button id="btn" type="button">logout</button>
+        </a> <br><br>
+    </div>
+    <div class="topnav">
+  <a href="#home">Pending</a>
+  <a href="#news">All</a>
+  <a href="#news">Approved</a>
+  <a href="#news">Rejected</a>
+  <a href="#news">Onhold</a>
+  </div>
+  <table>
+    <tr>
+        <th>Employee Name</th>
+        <th>Destination</th>
+        <th>Priority</th>
+        <th>View Details</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Donald</td>
+        <td>Las Vegas</td>
+        <td>Critical</td>
+        <td><a href="/html/link.html">View more</a></td>
+        <td>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()">Approve</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Approve</a>
+                    <a href="#">Reject</a>
+                </div>
+            </div>
+            </td>
+    </tr>
+    <tr>
+        <td>Ashwathy</td>
+        <td>Delhi</td>
+        <td>Normal</td>
+        <td><a href="/html/link.html">View more</a></td>
+        <td>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()">Approve</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Approve</a>
+                    <a href="#">Reject</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Franco</td>
+        <td>Kochi</td>
+        <td>Normal</td>
+        <td><a href="/html/link.html">View more</a></td>
+        <td>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()">Approve</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Approve</a>
+                    <a href="#">Reject</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>  
+    <script src="/js/pending.js"></script>
+</body>
+</html>

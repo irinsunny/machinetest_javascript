@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/travel.css">
+
+</head>
+<script>
+    window.history.forward();
+</script>
+<body>
+    <div class="header">
+        <h1 class="text1">TRAVEL REQUESTOR</h1> <br><br><br>
+        <a href="/html/travel.html">
+            <button id="btn" type="button">logout</button>
+        </a>
+    </div>
+    <div>
+        <button type="sumit" class="text">Form</button>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">View Request</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="/html/all.html">All</a>
+                <a href="#">Critical</a>
+                <a href="#">Normal</a>
+                <a href="#">Rejecetd</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <table>
+        <tr>
+            <th>Employee Name</th>
+            <th>Destination</th>
+            <th>Priority</th>
+            <th>View Details</th>
+        </tr>
+        <tr>
+            <td>Donald</td>
+            <td>Las Vegas</td>
+            <td>Critical</td>
+            <td><a href="/html/link.html">View more</a></td>
+        </tr>
+        <tr>
+            <td>Ashwathy</td>
+            <td>Delhi</td>
+            <td>Normal</td>
+            <td><a href="/html/link.html">View more</a></td>
+        </tr>
+        <tr>
+            <td>Franco</td>
+            <td>Kochi</td>
+            <td>Normal</td>
+            <td><a href="/html/link.html">View more</a></td>
+        </tr>
+    </table>
+    <script src="/js/all.js"></script>
+</body>
+
+</html>

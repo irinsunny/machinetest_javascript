@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/travel.css">
+    <title>Document</title>
+</head>
+<script>
+    window.history.forward();
+</script>
+
+<body>
+    <div class="secondpage">
+        <div class="header">
+            <h1 class="text1">TRAVEL REQUESTOR</h1> <br><br><br>
+            <a href="/html/travel.html">
+                <button id="btn" type="button" class="btn btn-outline-primary">logout</button>
+            </a>
+        </div>
+        <div>
+            
+            <button type="sumit" class="text">Form</button>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()">View Request</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/html/all.html">All</a>
+                    <a href="#">Critical</a>
+                    <a href="#">Normal</a>
+                    <a href="#">Rejecetd</a>
+                </div>
+            </div>
+
+        </div>
+        <form id="secondform">
+            <br>
+            <br>
+            <div class="form-group text1 ">
+                <label for="Employee ID">Emp Id</label>
+                <input type="text" id="empid" name="empid" size="14" maxlength="30" class="form-control">
+                <span id="empError" class="error"></span>
+            </div>
+
+            <div class="form-group text2 ">
+                <label for="Employee Name">Emp Name</label>
+                <input type="text" id="empName" name="empName" size="14" maxlength="30" class="form-control">
+                <span id="empNameError" class="error"></span>
+            </div> <br><br> <br> <br>
+            <div class="form-group text1 ">
+                <label for="Project">Project</label>
+                <input type="text" id="project" name="project" size="14" maxlength="30" class="form-control">
+                <span id="projectError" class="error"></span>
+            </div>
+            <div class="form-group text2 ">
+                <label for="Cause">Cause for travel</label>
+                <input type="text" id="cause" name="cause" size="14" maxlength="30" class="form-control">
+                <span id="causeError" class="error"></span>
+            </div> <br> <br> <br> <br>
+            <div class="form-group text1 ">
+                <label for="Source">source</label>
+                <input type="text" id="source" name="source" size="14" maxlength="30" class="form-control">
+                <span id="SourceError" class="error"></span>
+            </div>
+            <div class="form-group text2 ">
+                <label for="Destination">Destination</label>
+                <input type="text" id="destination" name="destination" size="14" maxlength="30" class="form-control">
+                <span id="destinationError" class="error"></span>
+            </div> <br> <br> <br> <br>
+
+
+            <div class="form-group text1">
+                <label for="dob">From Date</label>
+                <input type="date" id="fromdate" name="fromdate" class="form-control" class="form-control">
+                <span id="fromdateError" class="error"></span>
+            </div>
+            <div class="form-group text3">
+                <label for="days">No of days</label>
+                <input type="text" id="days" name="days" readonly size="5" class="form-control">
+
+            </div>
+            <div class="form-group text2 ">
+                <label for="dob">To Date</label>
+                <input type="date" id="todate" name="todate" class="form-control">
+                <span id="todateError" class="error"></span>
+            </div> <br> <br> <br> <br> <br> <br>
+
+            <div class="form-group text1">
+                <label for="Mode of travel">Mode of travel</label>
+                <input type="text" id="mode" name="mode" size="14" maxlength="30" class="form-control">
+                <span id="modeError" class="error"></span>
+            </div> <br><br><br> <br>
+            <button type="submit" class="btn btn-primary text2">APPLY</button>
+        </form>
+
+
+    </div>
+    <script src="/js/secondpage.js"></script>
+</body>
+
+</html>
